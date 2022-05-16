@@ -18,6 +18,11 @@ def pole_kola(lista):
 def pole_trojkata(lista):
   p=(lista[0]+lista[1]+lista[2])/2
   return math.sqrt(p*(p-lista[0])*(p-lista[1])*(p-lista[2]))
+
+def round_up(suma, decimals):
+  multiplier = 10**decimals
+  return math.ceil(suma*multiplier)/multiplier
+
 suma=0
 for lista in figury:
   if len(lista)>3:
@@ -30,8 +35,4 @@ for lista in figury:
     wynik=(pole_trojkata(lista))  
   suma=suma+wynik #sumuje wszystkie pola figur
 
-print(suma)
-
-
-
-
+print(round_up(suma,1))
