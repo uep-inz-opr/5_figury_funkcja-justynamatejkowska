@@ -7,7 +7,7 @@ figury=[]  #lista z wprowadzonymi figurami
 
 for i in range(l_figur):
   figura=input().split()
-  figury.append([int(x) for x in figura])
+  figury.append([float(x) for x in figura])
 
 def pole_prosto(lista):
   return lista[0]*lista[1]
@@ -31,5 +31,7 @@ for lista in figury:
   suma=suma+wynik #sumuje wszystkie pola figur
 
 print(suma)
+
+
 
 
