@@ -8,6 +8,7 @@ figury=[]  #lista z wprowadzonymi figurami
 for i in range(l_figur):
   figura=input().split()
   figury.append([float(x) for x in figura])
+[x for x in figura if x==0]
 
 def pole_prosto(lista):
   return lista[0]*lista[1]
@@ -36,3 +37,5 @@ for lista in figury:
   suma=suma+wynik #sumuje wszystkie pola figur
 
 print(round_up(suma,1))
+print('Błąd. Długość boku musi być większa od 0.')
+
