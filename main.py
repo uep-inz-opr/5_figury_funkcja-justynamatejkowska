@@ -26,7 +26,7 @@ def round_up(suma, decimals):
 suma=0
 for lista in figury:
   if len(lista)>3:
-    print("Błąd")
+    print("Błąd: można podać maksymalnie 3 liczby")
   elif len(lista)==1:
     wynik=(pole_kola(lista))  
   elif len(lista)==2:
